@@ -19,6 +19,6 @@ server.addService(usersProto.UserService.service, {
   },
 });
 
-server.bind("localhost:50051", grpc.ServerCredentials.createInsecure());
-console.log("Server running at http://localhost:50051");
+server.bind("0.0.0.0:4000", grpc.ServerCredentials.createInsecure());
+console.log("Server running at http://localhost:0.0.0.0:5000");
 server.start();
